@@ -14,7 +14,7 @@ $("#add_country_btn").click(function() {
     // Отправка AJAX запроса на добавление данных в таблицу
     $.ajax({
         type:"POST",
-        url:"table.php",
+        url:"db.php",
         data: {data: data},
         error:function(){
             alert('Ошибка! Не удалось добавить данные в базу данных!');
