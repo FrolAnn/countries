@@ -9,8 +9,8 @@
     <?php if($countries): ?>
         <?php foreach ($countries as $country) : ?>
             <tr>
-                <td> <?= $country['NAME'] ?></td>
-                <td> <?= $country['CAPITAL'] ?></td>
+                <td> <?= htmlspecialchars($country['NAME']) ?></td>
+                <td> <?= htmlspecialchars($country['CAPITAL']) ?></td>
             </tr>
         <?php endforeach ?>
     <?php endif ?>
